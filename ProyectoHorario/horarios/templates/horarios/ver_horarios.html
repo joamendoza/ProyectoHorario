@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ver Horarios</title>
+</head>
+<body>
+    {% if horarios %}
+    <h2>Horarios:</h2>
+    {{ horarios|safe }}
+    {% else %}
+    <p>No se encontraron horarios válidos para la carrera y nivel especificados.</p>
+    {% endif %}
+</body>
+</html>

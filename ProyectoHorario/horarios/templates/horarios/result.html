@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Horario Generado</title>
+</head>
+<body>
+    {% if horario %}
+    <h2>Horarios:</h2>
+    {{ horario|safe }}
+    {% else %}
+    <p>No se encontraron horarios válidos para la carrera y nivel especificados.</p>
+    {% endif %}
+</body>
+</html>
